@@ -5,7 +5,7 @@
 | **Access Pattern**     | ReadWriteOnce (RWO)                  | ReadWriteOnce (RWO)                       | HTTP(S), REST API, global, similar to RWX          |
 | **Availability**       | Within a single zone                 | Within a single zone                      | Global                                             |
 | **Redundancy**         | Zone-internal                        | Zone-internal                             | Cross-zone, geo-redundant                          |
-| **Encryption**         | No                                   | Default, strong encryption                | Optional (server-side or client-side encryption)   |
+| **Encryption**         | No                                   | Default, strong encryption                | Optional (SSE-C)                                   |
 | **Access Control**     | OpenStack/Kubernetes roles           | OpenStack/Kubernetes roles                | IAM, ACLs, bucket policies                         |
 | **Backup**             | Managed by customer                  | Managed by customer                       | Managed by customer                                |
 | **Typical Use Cases**  | Persistent volumes for VMs/containers| Encrypted persistent volumes              | Backup, archiving, web applications, data lakes    |
